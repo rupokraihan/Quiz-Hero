@@ -7,6 +7,24 @@
     <title>Document</title>
 </head>
 <body>
-    <h1>hey you!!!</h1>
+    <h1><span>Question-01</span>Difference between foreach, map, find and filter</h1>
+    <p><span>Answer:</span> 
+        ForEach, map, find, and filter are all array methods in JavaScript, but they have different purposes and behaviors.  Here are the differences between them:
+
+        1 forEach method:
+           The forEach() method executes a provided function once for each element in an array. After executing the function for every array element, this method changes the values of the existing array elements according to the result of the provided function. Hence forEach() is a mutator method.  It does not create a new array or modify the original array. Also, forEach method doesn’t return anything (undefined).
+
+        2 map method
+           The map() method, similar to the forEach() method, executes the provided function once for each element in an array. But unlike the forEach() method, it creates a new array with the results of calling a function for every array element. Hence map() method relies on immutability. Also, map() does not execute/call the function for those array elements without values.
+           
+        3.   filter() - creates a new array with all the elements that pass the test implemented by the provided function. The original array is not modified. It returns a new array with only the elements that meet the specified condition. It's often used when you need to filter an array based on a specific condition. 
+        
+        4. find() - filter creates a new array with all elements that pass the provided testing function. It returns a new array and does not modify the original array.  this function returns only one match in an array. If in an array is more than one result, the function will return the first that has matched.
+
+        In summary, forEach is used to loop through an array and execute a function on each element, map is used to create a new array with the results of calling a function on each element, find is used to find the first element that satisfies a condition, and filter is used to create a new array with all elements that satisfy a condition.
+        
+</p>
+
+
 </body>
 </html>
