@@ -1,30 +1,88 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    <h1><span>Question-01</span>Difference between foreach, map, find and filter</h1>
-    <p><span>Answer:</span> 
-        ForEach, map, find, and filter are all array methods in JavaScript, but they have different purposes and behaviors.  Here are the differences between them:
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Blog</title>
+  </head>
+  <body>
+    <div class="text-2xl p-4">
+      <h1 class="text-4xl mt-5 mb-5 font-semibold">
+        Q-01: Difference between foreach, map, find and filter
+      </h1>
 
-        1 forEach method:
-           The forEach() method executes a provided function once for each element in an array. After executing the function for every array element, this method changes the values of the existing array elements according to the result of the provided function. Hence forEach() is a mutator method.  It does not create a new array or modify the original array. Also, forEach method doesn’t return anything (undefined).
+      <p>
+        Answer: <br> ForEach, map, find, and filter are all array methods in
+        JavaScript, but they have different purposes and behaviors. Here are the
+        differences between them:
+      </p>
 
-        2 map method
-           The map() method, similar to the forEach() method, executes the provided function once for each element in an array. But unlike the forEach() method, it creates a new array with the results of calling a function for every array element. Hence map() method relies on immutability. Also, map() does not execute/call the function for those array elements without values.
-           
-        3.   filter() - creates a new array with all the elements that pass the test implemented by the provided function. The original array is not modified. It returns a new array with only the elements that meet the specified condition. It's often used when you need to filter an array based on a specific condition. 
-        
-        4. find() - filter creates a new array with all elements that pass the provided testing function. It returns a new array and does not modify the original array.  this function returns only one match in an array. If in an array is more than one result, the function will return the first that has matched.
+      <p>
+        i. forEach - <br>
+         The forEach() method executes a provided function once
+      for each element in an array. After executing the function for every array
+      element, this method changes the values of the existing array elements
+      according to the result of the provided function. Hence forEach() is a
+      mutator method. It does not create a new array or modify the original
+      array. Also, forEach method doesn’t return anything (undefined).
+      </p>
+      <p>
+        ii. map() - <br>
+      method The map() method, similar to the forEach() method, executes the
+      provided function once for each element in an array. But unlike the
+      forEach() method, it creates a new array with the results of calling a
+      function for every array element. Hence map() method relies on
+      immutability. Also, map() does not execute/call the function for those
+      array elements without values.
+      </p>
 
-        In summary, forEach is used to loop through an array and execute a function on each element, map is used to create a new array with the results of calling a function on each element, find is used to find the first element that satisfies a condition, and filter is used to create a new array with all elements that satisfy a condition.
-        
-</p>
+      <p>
+        iii. filter() - <br>
+         creates a new array with all
+      the elements that pass the test implemented by the provided function. The
+      original array is not modified. It returns a new array with only the
+      elements that meet the specified condition. It's often used when you need
+      to filter an array based on a specific condition.
+      </p> 
+      
+      <p>
+        iv. find() - <br>
+        find method returns the first element in an array that satisfies a provided condition. It returns the value of the first element in the array that meets the condition specified by the callback function. It is used when we want to find a specific element in an array. If in an array is more than one result, the function will return the first that has matched.
+      </p> <br>
+
+      In summary, forEach is used to loop through an array and execute a function on each element, map is used to create a new array with the results of calling a function on each element, find is used to find the first element that satisfies a condition, and filter is used to create a new array with all elements that satisfy a condition. <br>
+
+      <h1 class="text-4xl mt-5 mb-5 font-semibold">
+        Q-02: Difference between local storage, session storage and Cookies
+
+      </h1>
+      <p> Answer: <br>
+        localStorage, sessionStorage, and cookies are all used to store data on the client-side in web browsers. There are some differences between them. Here's a brief explanation of the difference between them: <br>
+
+        i. Local storage: <br>
+         Local storage is a method for storing data in a client's browser that persists even after the browser window is closed. The data is stored locally on the client's device and is accessible from any page on the same domain. Local storage can store a larger amount of data than cookies and session storage, typically up to 5-10 MB depending on the browser. <br>
+
+        ii.Session storage: <br>
+         Session storage is a method for storing data in a client's browser that persists only for the duration of the browser session. Once the browser window is closed, the data is lost. Session storage can store a larger amount of data than cookies, typically up to 5-10 MB depending on the browser. The data is accessible from any page on the same domain during the same session. <br>
+
+        iii.Cookies: <br>
+         Cookies are small text files that are stored on a user's browser by a website. They are used to store small amounts of data that can be used by the website for various purposes, such as tracking user behavior or storing user preferences. Cookies have a much smaller storage capacity than localStorage or sessionStorage (usually up to 4KB per cookie). Cookies can also have an expiration date, which means they will be automatically deleted by the browser once that date is reached. <br> <br>
+         
+         In summary, localStorage and sessionStorage provide a way to store data in a user's browser for a longer period of time than cookies, while cookies have a smaller storage capacity and can have an expiration date. <br> <br>
+        </p>
 
 
-</body>
+         <h1 class="text-4xl mt-5 mb-5 font-semibold">
+            Q-03: What is event loop? How does it work?
+          </h1>
+          
+         <p>
+            answer: <br>
+            
+         </p> 
+          
+    </div>
+  </body>
 </html>
