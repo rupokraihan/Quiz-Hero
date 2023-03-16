@@ -14,84 +14,165 @@
       </h1>
 
       <p>
-        Answer: <br> ForEach, map, find, and filter are all array methods in
-        JavaScript, but they have different purposes and behaviors. Here are the
-        differences between them:
+        Answer: <br />
+        ForEach, map, find, and filter are all array methods in JavaScript, but
+        they have different purposes and behaviors. Here are the differences
+        between them:
       </p>
 
       <p>
-        i. forEach - <br>
-         The forEach() method executes a provided function once
-      for each element in an array. After executing the function for every array
-      element, this method changes the values of the existing array elements
-      according to the result of the provided function. Hence forEach() is a
-      mutator method. It does not create a new array or modify the original
-      array. Also, forEach method doesn’t return anything (undefined).
+        i. forEach - <br />
+        Basically, the forEach() method lets you run a function on every element
+        in an array. This means you can do something to each item in the array
+        without having to write a bunch of code for each one. One thing to keep
+        in mind is that the forEach() method doesn't create a new array or
+        change the original one. Instead, it changes the values of the existing
+        array elements based on the result of the function you provide. It's
+        also important to note that the forEach() method doesn't return
+        anything. This means you can't use it to get a new array or a modified
+        version of the original one. Overall, the forEach() method is a handy
+        tool for working with arrays in JavaScript. Give it a try and see how it
+        can make your coding life easier!
       </p>
       <p>
-        ii. map() - <br>
-      method The map() method, similar to the forEach() method, executes the
-      provided function once for each element in an array. But unlike the
-      forEach() method, it creates a new array with the results of calling a
-      function for every array element. Hence map() method relies on
-      immutability. Also, map() does not execute/call the function for those
-      array elements without values.
+        ii. map() - <br />
+        method The map() method, similar to the forEach() method, executes the
+        provided function once for each element in an array. But unlike the
+        forEach() method, it creates a new array with the results of calling a
+        function for every array element. Hence map() method relies on
+        immutability. Also, map() does not execute/call the function for those
+        array elements without values.So that's map() in a nutshell! It's a
+        really useful tool for working with arrays, and it can help you do some
+        really cool things.
       </p>
 
       <p>
-        iii. filter() - <br>
-         creates a new array with all
-      the elements that pass the test implemented by the provided function. The
-      original array is not modified. It returns a new array with only the
-      elements that meet the specified condition. It's often used when you need
-      to filter an array based on a specific condition.
-      </p> 
-      
-      <p>
-        iv. find() - <br>
-        find method returns the first element in an array that satisfies a provided condition. It returns the value of the first element in the array that meets the condition specified by the callback function. It is used when we want to find a specific element in an array. If in an array is more than one result, the function will return the first that has matched.
-      </p> <br>
+        iii. filter() - <br />
+        creates a new array with all the elements that pass the test implemented
+        by the provided function. The original array is not modified. It returns
+        a new array with only the elements that meet the specified condition.
+        It's often used when you need to filter an array based on a specific
+        condition.
+      </p>
 
-      In summary, forEach is used to loop through an array and execute a function on each element, map is used to create a new array with the results of calling a function on each element, find is used to find the first element that satisfies a condition, and filter is used to create a new array with all elements that satisfy a condition. <br>
+      <p>
+        iv. find() - <br />
+        find method returns the first element in an array that satisfies a
+        provided condition. It returns the value of the first element in the
+        array that meets the condition specified by the callback function. It is
+        used when we want to find a specific element in an array. If in an array
+        is more than one result, the function will return the first that has
+        matched.
+      </p>
+      <br />
+
+      In summary, forEach is used to loop through an array and execute a
+      function on each element, map is used to create a new array with the
+      results of calling a function on each element, find is used to find the
+      first element that satisfies a condition, and filter is used to create a
+      new array with all elements that satisfy a condition. <br />
 
       <h1 class="text-4xl mt-5 mb-5 font-semibold">
         Q-02: Difference between local storage, session storage and Cookies
-
       </h1>
-      <p> Answer: <br>
-        localStorage, sessionStorage, and cookies are all used to store data on the client-side in web browsers. There are some differences between them. Here's a brief explanation of the difference between them: <br>
+      <p>
+        Answer: <br />
+        localStorage, sessionStorage, and cookies are all used to store data on
+        the client-side in web browsers. There are some differences between
+        them. Here's a brief explanation of the difference between them: <br />
 
-        i. Local storage: <br>
-         Local storage is a method for storing data in a client's browser that persists even after the browser window is closed. The data is stored locally on the client's device and is accessible from any page on the same domain. Local storage can store a larger amount of data than cookies and session storage, typically up to 5-10 MB depending on the browser. <br>
+        i. Local storage: <br />
+        Local storage is a method for storing data in a client's browser that
+        persists even after the browser window is closed. The data is stored
+        locally on the client's device and is accessible from any page on the
+        same domain. Local storage can store a larger amount of data than
+        cookies and session storage, typically up to 5-10 MB depending on the
+        browser.Overall, local storage is a handy tool for keeping your data
+        safe and accessible. <br />
 
-        ii.Session storage: <br>
-         Session storage is a method for storing data in a client's browser that persists only for the duration of the browser session. Once the browser window is closed, the data is lost. Session storage can store a larger amount of data than cookies, typically up to 5-10 MB depending on the browser. The data is accessible from any page on the same domain during the same session. <br>
+        ii.Session storage: <br />
+        Session storage is a method for storing data in a client's browser that
+        persists only for the duration of the browser session. Once the browser
+        window is closed, the data is lost. Session storage can store a larger
+        amount of data than cookies, typically up to 5-10 MB depending on the
+        browser. The data is accessible from any page on the same domain during
+        the same session. <br />
 
-        iii.Cookies: <br>
-         Cookies are small text files that are stored on a user's browser by a website. They are used to store small amounts of data that can be used by the website for various purposes, such as tracking user behavior or storing user preferences. Cookies have a much smaller storage capacity than localStorage or sessionStorage (usually up to 4KB per cookie). Cookies can also have an expiration date, which means they will be automatically deleted by the browser once that date is reached. <br> <br>
-         
-         In summary, localStorage and sessionStorage provide a way to store data in a user's browser for a longer period of time than cookies, while cookies have a smaller storage capacity and can have an expiration date. <br> <br>
-        </p>
+        iii.Cookies: <br />
+        Cookies are small text files that are stored on a user's browser by a
+        website. They are used to store small amounts of data that can be used
+        by the website for various purposes, such as tracking user behavior or
+        storing user preferences. Cookies have a much smaller storage capacity
+        than localStorage or sessionStorage (usually up to 4KB per cookie).
+        Cookies can also have an expiration date, which means they will be
+        automatically deleted by the browser once that date is reached. <br />
+        <br />
 
+        In summary, localStorage and sessionStorage provide a way to store data
+        in a user's browser for a longer period of time than cookies, while
+        cookies have a smaller storage capacity and can have an expiration date.
+        <br />
+        <br />
+      </p>
 
-         <h1 class="text-4xl mt-5 mb-5 font-semibold">
-            Q-03: What is event loop? How does it work?
-          </h1>
-          
-         <p>
-            answer: <br>
-            The event loop is a fundamental part of the JavaScript language and the JavaScript runtime environment. The event loop is responsible for managing the execution of code in a single thread, ensuring that tasks are processed in the correct order and that the thread does not become blocked. It ensures that code runs in a non-blocking way, so that the UI remains responsive and other operations can continue while a long-running task is being performed. <br>
-            
-            The event loop checks the call stack and the message queue indefinitely. When the call stack is empty, the event loop checks the message queue for any outstanding tasks or events. If there is a job or event in the message queue, it is transferred to the call stack and performed. <br>
+      <h1 class="text-4xl mt-5 mb-5 font-semibold">
+        Q-03: What is event loop? How does it work?
+      </h1>
 
-            Here's a simplified example of how the event loop works: <br>
-            i. The JavaScript runtime maintains two primary components: the call stack and the event queue. The call stack is a data structure that tracks the execution of function calls in the program, while the event queue is a list of events and associated callback functions. <br>
-            ii. When an event is triggered, such as a user clicking a button or a timer expiring, the callback function associated with that event is added to the event queue. <br>
-            iii. When an event is found, the event loop dequeues the event and passes it to the appropriate event handler. <br>
-            iv. Once the callback function has completed execution, the event loop returns to monitoring the call stack and event queue <br>
-            v. This process continues indefinitely, with the event loop processing events in the order they are added to the queue and executing their associated callback functions when the call stack is empty.
-         </p> 
-          
+      <p>
+        answer: <br />
+        The event loop is a fundamental part of the JavaScript language and the
+        JavaScript runtime environment. The event loop is responsible for
+        managing the execution of code in a single thread, ensuring that tasks
+        are processed in the correct order and that the thread does not become
+        blocked. It ensures that code runs in a non-blocking way, so that the UI
+        remains responsive and other operations can continue while a
+        long-running task is being performed. <br />
+
+        The event loop checks the call stack and the message queue indefinitely.
+        When the call stack is empty, the event loop checks the message queue
+        for any outstanding tasks or events. If there is a job or event in the
+        message queue, it is transferred to the call stack and performed. <br />
+
+        Here's a simplified example of how the event loop works: <br />
+        i. The JavaScript runtime maintains two primary components: the call
+        stack and the event queue. The call stack is a data structure that
+        tracks the execution of function calls in the program, while the event
+        queue is a list of events and associated callback functions. <br />
+        ii. When an event is triggered, such as a user clicking a button or a
+        timer expiring, the callback function associated with that event is
+        added to the event queue. <br />
+        iii. When an event is found, the event loop dequeues the event and
+        passes it to the appropriate event handler. <br />
+        iv. Once the callback function has completed execution, the event loop
+        returns to monitoring the call stack and event queue <br />
+        v. This process continues indefinitely, with the event loop processing
+        events in the order they are added to the queue and executing their
+        associated callback functions when the call stack is empty.
+      </p>
+    </div>
+
+    <div class="text-2xl p-4">
+      <h1 class="text-4xl mt-5 mb-5 font-semibold">quizTimer function</h1>
+      The quizTimer function that sets up a timer to be used in a quiz. It takes
+      a single argument, dismiss, which is a boolean value. If dismiss is true,
+      the function will clear the interval and stop the timer. Otherwise, the
+      function will continue running and updating the timer on the HTML document
+      every second. If the count reaches 60 seconds, the function alternates the
+      color of the text displayed using CSS classes called "text-red-300" and
+      "text-red-700". The color changes every two seconds. The timer continues
+      until it is dismissed by passing true as a parameter to the function or
+      until the window is closed. <br /><br />
+
+      <h1 class="text-4xl mt-5 mb-5 font-semibold">chooseQuiz function</h1>
+      The chooseQuiz function is used to add or update the answer given by a
+      user for a particular quiz question. The function first checks if there is
+      already an answer for the question with the given index in the answers
+      array. It does this by using the find method on the answers array to
+      search for an answer object with an id property that matches the id of the
+      question in the quizData array at the given index. Finally, the
+      displayAnswers function is called with the answers array as an argument to
+      update the UI with the latest quiz answers.
     </div>
   </body>
 </html>
