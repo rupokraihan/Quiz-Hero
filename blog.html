@@ -80,7 +80,16 @@
           
          <p>
             answer: <br>
+            The event loop is a fundamental part of the JavaScript language and the JavaScript runtime environment. The event loop is responsible for managing the execution of code in a single thread, ensuring that tasks are processed in the correct order and that the thread does not become blocked. It ensures that code runs in a non-blocking way, so that the UI remains responsive and other operations can continue while a long-running task is being performed. <br>
             
+            The event loop checks the call stack and the message queue indefinitely. When the call stack is empty, the event loop checks the message queue for any outstanding tasks or events. If there is a job or event in the message queue, it is transferred to the call stack and performed. <br>
+
+            Here's a simplified example of how the event loop works: <br>
+            i. The JavaScript runtime maintains two primary components: the call stack and the event queue. The call stack is a data structure that tracks the execution of function calls in the program, while the event queue is a list of events and associated callback functions. <br>
+            ii. When an event is triggered, such as a user clicking a button or a timer expiring, the callback function associated with that event is added to the event queue. <br>
+            iii. When an event is found, the event loop dequeues the event and passes it to the appropriate event handler. <br>
+            iv. Once the callback function has completed execution, the event loop returns to monitoring the call stack and event queue <br>
+            v. This process continues indefinitely, with the event loop processing events in the order they are added to the queue and executing their associated callback functions when the call stack is empty.
          </p> 
           
     </div>
